@@ -30,7 +30,6 @@ public class PythagoreanTriplet extends Methods {
          */
 
         int[] input = {3, 5, 12, 5, 13};
-
         pythagoreanTriplet(input);
     }
 }
