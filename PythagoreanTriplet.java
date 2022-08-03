@@ -11,14 +11,11 @@ public class PythagoreanTriplet extends Methods {
             a = input[i];
             for (int j = i + 1; j < input.length - 1; j++) {
                 b = input[j];
-                if (input[i] != input[j]) {
                     for (int k = j + 1; k < input.length; k++) {
                         c = input[k];
                         if (a * a + (b * b) == (c * c)) {
                             System.out.print("True" + " ");
                             System.out.println(a + " / " + b + " / " + c);
-
-                        }
                     }
                 }
             }
