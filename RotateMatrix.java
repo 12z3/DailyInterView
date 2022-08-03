@@ -7,7 +7,7 @@ public class RotateMatrix extends Methods {
 
         /**
          * @Source: This problem was recently asked by Uber:
-        Given a square 2D matrix (n x n), rotate the matrix by 90 degrees clockwise.
+                    Given a square 2D matrix (n x n), rotate the matrix by 90 degrees clockwise.
          */
 
         int[][] matrix = {{1,2,3},
