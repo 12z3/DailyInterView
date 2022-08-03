@@ -8,7 +8,7 @@ public class PythagoreanTriplet extends Methods {
 
         /**
          @Source: https://www.youtube.com/watch?v=18wOrbRN5co
-         -> Pythagorean triplet; a, b, c -> (aˆ2 ?= bˆ2 + cˆ2).
+         -> Pythagorean triplet; a, b, c -> (aˆ2 ?= bˆ2 + cˆ2); Uber.
          */
 
         int[] input = {3, 5, 12, 5, 13};
