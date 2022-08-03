@@ -20,6 +20,10 @@ public class RotateMatrix extends Methods {
 
         int[][] tmp = new int[matrix.length][matrix.length];
 
+        // Взима 3-я ред от "matrix" и го прави 1-а колона в "tmp".
+        // Взима 2-я ред от "matrix" и го прави 2-а колона в "tmp".
+        // Взима 1-я ред от "matrix" и го прави 3-а колона в "tmp".
+
         for (int col = matrix.length - 1; col >= 0; col--) {               // Обхожда по колони, не по-редове.
             for (int row = 0; row < matrix.length; row++) {                // т.е: За всеки ред От Дадената колона.
                 tmp[row][matrix.length - 1 - col] = matrix[col][row];      // tmp[0][0] = matrix[0][2];
