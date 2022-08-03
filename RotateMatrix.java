@@ -20,9 +20,9 @@ public class RotateMatrix extends Methods {
 
         int[][] tmp = new int[matrix.length][matrix.length];
 
-        for (int col = matrix.length - 1; col >= 0; col--) {
-            for (int row = 0; row < matrix.length; row++) {
-                tmp[row][matrix.length - 1 - col] = matrix[col][row];
+        for (int col = matrix.length - 1; col >= 0; col--) {               // Обхожда по колони, не по-редове.
+            for (int row = 0; row < matrix.length; row++) {                // т.е: За всеки ред От Дадената колона.
+                tmp[row][matrix.length - 1 - col] = matrix[col][row];      // tmp[0][0] = matrix[0][2];
             }
         }
 
