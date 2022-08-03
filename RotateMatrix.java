@@ -7,7 +7,7 @@ public class RotateMatrix extends Methods {
 
         /**
          * @Source: This problem was recently asked by Uber:
-                    Given a square 2D matrix (n x n), rotate the matrix by 90 degrees clockwise.
+        Given a square 2D matrix (n x n), rotate the matrix by 90 degrees clockwise.
          */
 
         int[][] matrix = {{1,2,3},
@@ -18,11 +18,11 @@ public class RotateMatrix extends Methods {
                           {8,5,2},
                           {9,6,3}};
 
-        int[][] tmp = new int[3][3];
+        int[][] tmp = new int[matrix.length][matrix.length];
 
         for (int col = matrix.length - 1; col >= 0; col--) {
             for (int row = 0; row < matrix.length; row++) {
-            tmp[row][matrix.length - 1 - col] = matrix[col][row];
+                tmp[row][matrix.length - 1 - col] = matrix[col][row];
             }
         }
 
