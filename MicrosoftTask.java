@@ -3,7 +3,6 @@ package DailyInterView;
 public class MicrosoftTask {
     private static void resolvedProblem(int[] input) {
         int[] array = new int[input.length];
-        int max = Integer.MIN_VALUE;
         int a, b, c, result, tmp;
 
         for (int i = 0; i < input.length; i++) array[i] = Math.abs(input[i]);
