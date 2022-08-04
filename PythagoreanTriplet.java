@@ -7,15 +7,14 @@ public class PythagoreanTriplet extends Methods {
     private static void pythagoreanTriplet(int[] input) {
         int a, b, c;
         StringBuilder stb = new StringBuilder();
-        for (int i = 0; i < input.length - 1; i++) {
+        for (int i = 0; i < input.length; i++) {
             a = input[i];
-            for (int j = i + 1; j < input.length - 1; j++) {
+            for (int j = i + 1; j < input.length; j++) {
                 b = input[j];
-                    for (int k = j + 1; k < input.length; k++) {
-                        c = input[k];
-                        if (a * a + (b * b) == (c * c)) {
-                            System.out.print("True" + " ");
-                            System.out.println(a + " / " + b + " / " + c);
+                for (int k = j + 1; k < input.length; k++) {
+                    c = input[k];
+                    if (a * a + (b * b) == (c * c)) {
+                        System.out.printf("%sˆ2 + %dˆ2 = %dˆ2\n", a, b, c);
                     }
                 }
             }
