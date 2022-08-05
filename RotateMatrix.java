@@ -26,7 +26,7 @@ public class RotateMatrix extends Methods {
         // Взима 1-я ред от "matrix" и го прави 3-а колона в "tmp".
 
         for (int col = matrix.length - 1; col >= 0; col--) {               // Обхожда по колони, не по-редове.
-            for (int row = 0; row < matrix[col].length; row++) {                // т.е: За всеки ред От Дадената колона.
+            for (int row = 0; row < matrix[col].length; row++) {           // т.е: За всеки ред От Дадената колона.
                 tmp[row][matrix.length - 1 - col] = matrix[col][row];      // tmp[0][0] = matrix[0][2];
             }
         }
