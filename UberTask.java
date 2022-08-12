@@ -3,18 +3,19 @@ package DailyInterView;
 import training.Methods;
 
 public class UberTask extends Methods {
+
+    /**
+     @Problem: Hi, here's your problem today. This issue was recently asked by Uber:
+     Given a list of numbers, find if there exists a pythagorean triplet in that list.
+     A pythagorean triplet is 3 variables a, b, c where a2 + b2 = c2
+
+     Example:
+     Input: [3, 5, 12, 5, 13]
+     Output: True
+     Here, 52 + 122 = 132.
+     */
+
     private static String pythagoreancted(int[] input) {
-        /**
-         @Problem: Hi, here's your problem today. This problem was recently asked by Uber:
-         Given a list of numbers, find if there exists a pythagorean triplet in that list.
-         A pythagorean triplet is 3 variables a, b, c where a2 + b2 = c2
-
-         Example:
-         Input: [3, 5, 12, 5, 13]
-         Output: True
-         Here, 52 + 122 = 132.
-         */
-
         StringBuilder result = new StringBuilder();
         int i = 0, res = 0, a = 0, b = 0, c = 0;
 
