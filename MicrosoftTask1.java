@@ -15,7 +15,7 @@ public class MicrosoftTask1 extends Methods {
         StringBuilder resStb = new StringBuilder();
         int res = 0, old = 0;
 
-        for (int i : input) {
+        for (int i : input) {                   // Ред: 20 -> изключва текущият елемент от сметката.
             for (int l = 0, k = 0; l < input.length - 1; l++, k++) {
                 if (i != input[l]) res = Math.abs(i) * Math.abs(input[l] * Math.abs(input[l + 1]));
                 if (res > max) {
