@@ -16,8 +16,7 @@ public class UberTask extends Methods {
          */
 
         StringBuilder result = new StringBuilder();
-        int i = 0, j = 0, k = 0, res = 0;
-        int a = 0, b = 0, c = 0;
+        int i = 0, res = 0, a = 0, b = 0, c = 0;
 
         while (i < input.length) {
             a = input[i];
