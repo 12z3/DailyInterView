@@ -15,7 +15,7 @@ public class MicrosoftTask1 extends Methods {
         int[] input = {-4, -4, 2, 8};
         int max = Integer.MIN_VALUE;
         StringBuilder resStb = new StringBuilder();
-        int res = 0, old = 0;
+        int res = 0;
 
         for (int i : input) {                   // Ред: 22 -> изключва текущият елемент от сметката.
             for (int l = 0; l < input.length - 1; l++) {
