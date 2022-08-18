@@ -48,8 +48,9 @@ public class TwitterTask2 {
     }
 
     private static void otherFindKthLargest(int[] arr, int n) {
-        sortIntArray(arr);
         int count = 0;
+
+        sortIntArray(arr);
         for (int el: arr){
             count++;
             if (count == n) System.out.printf("%d ", el);
