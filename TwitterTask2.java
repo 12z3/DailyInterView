@@ -35,9 +35,29 @@ public class TwitterTask2 {
         System.out.printf("%d ", result);
     }
 
+    public static void sortIntArray(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] > arr[j]){
+                    int tmp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tmp;
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int[] input = {8, 7, 2, 3, 4, 1, 5, 6, 9, 0};
+        int[] arr = {8, 7, 2, 3, 4, 1, 5, 6, 9, 0};
+
         findKthLargest(input, 3);
 
+        sortIntArray(arr);
+        int count = 0;
+        for (int el: arr){
+            count++;
+            if (count == 3) System.out.printf("%d ", el);
+        }
     }
 }
