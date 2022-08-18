@@ -47,17 +47,20 @@ public class TwitterTask2 {
         }
     }
 
-    public static void main(String[] args) {
-        int[] input = {8, 7, 2, 3, 4, 1, 5, 6, 9, 0};
-        int[] arr = {8, 7, 2, 3, 4, 1, 5, 6, 9, 0};
-
-        findKthLargest(input, 3);
-
+    private static void otherFindKthLargest(int[] arr) {
         sortIntArray(arr);
         int count = 0;
         for (int el: arr){
             count++;
             if (count == 3) System.out.printf("%d ", el);
         }
+    }
+
+    public static void main(String[] args) {
+        int[] input = {8, 7, 2, 3, 4, 1, 5, 6, 9, 0};
+        int[] arr = {8, 7, 2, 3, 4, 1, 5, 6, 9, 0};
+
+        findKthLargest(input, 3);
+        otherFindKthLargest(arr);
     }
 }
