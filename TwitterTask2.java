@@ -17,10 +17,10 @@ public class TwitterTask2 {
         for (int i = 0; i < input.length; i++) {
             if (input[i] > max) {
                 max = input[i];
-                input[i] = 0;
+                input[i] = 0;                        // Нулира максималното число на всяка итерация.
                 count++;
             }
-            if (count == n - 1) {
+            if (count == n - 1) {                    // Условието, че двете намерени максимални числа са = 0.
                 break;
             }
         }
