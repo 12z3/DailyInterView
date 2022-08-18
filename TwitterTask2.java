@@ -47,12 +47,12 @@ public class TwitterTask2 {
         }
     }
 
-    private static void otherFindKthLargest(int[] arr) {
+    private static void otherFindKthLargest(int[] arr, int n) {
         sortIntArray(arr);
         int count = 0;
         for (int el: arr){
             count++;
-            if (count == 3) System.out.printf("%d ", el);
+            if (count == n) System.out.printf("%d ", el);
         }
     }
 
@@ -61,6 +61,6 @@ public class TwitterTask2 {
         int[] arr = {8, 7, 2, 3, 4, 1, 5, 6, 9, 0};
 
         findKthLargest(input, 3);
-        otherFindKthLargest(arr);
+        otherFindKthLargest(arr, 3);
     }
 }
