@@ -16,16 +16,16 @@ public class TwitterTask2 {
 
         for (int i = 0; i < input.length; i++) {
             if (input[i] > max) {
-                max = input[i];
+                max = input[i];                      // {8, 7, 2, 3, 4, 1, 5, 6, 9, 0}
                 input[i] = 0;                        // Нулира максималното число на всяка итерация.
-                count++;
+                count++;                             // {0, 7, 2, 3, 4, 1, 5, 6, 0, 0}
             }
             if (count == n - 1) {                    // Условието, че двете намерени максимални числа са = 0.
                 break;
             }
         }
         max = Integer.MIN_VALUE;
-        for (int el : input) {
+        for (int el : input) {                        // {0, 7, 2, 3, 4, 1, 5, 6, 0, 0}
             if (el > max) {
                 max = el;
                 result = max;
