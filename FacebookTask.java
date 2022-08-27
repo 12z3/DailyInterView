@@ -5,7 +5,8 @@ import java.util.List;
 
 public class FacebookTask {
     /**
-     * @Problem: Given a list of numbers,
+     * @Problem: This problem was recently asked by Facebook:
+     * Given a list of numbers,
      * where every number shows up twice except for one number, find that one number.
      * Input: [4, 3, 2, 4, 1, 3, 2]
      * Output: 1
