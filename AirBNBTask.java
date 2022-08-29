@@ -11,6 +11,14 @@ public class AirBNBTask {
      * Input: ['abc', 'bcd', 'cba', 'cbd', 'efg']
      * Output: [['abc', 'cba'], ['bcd', 'cbd'], ['efg']]
      */
+
+    /**
+     * list<String> input = new ArrayList<>();
+     * StringBuilder stb = new StringBuilder("word");
+     * input.add(stb); stb e указателя на new StringBuilder("word") в heap-a;
+     * Промени ли се "word" указателя Ще "сочи" към друга стойност а от там и елемента в листа ще е различен.
+     *
+     */
     public static void main(String[] args) {
         List<String> input = new ArrayList<>(List.of("abc", "bcd", "cba", "cbd", "efg"));
 
