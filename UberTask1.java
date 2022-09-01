@@ -22,9 +22,10 @@ public class UberTask1 {
     private static void pythagorean(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.size() - 1; j++) {
-                if (condition(list, i, j))
+                if (condition(list, i, j)) {
                     System.out.printf("%dˆ2 = %dˆ2 + %dˆ2%n",
                             list.get(i), list.get(j), list.get(j + 1));
+                }
             }
         }
     }
