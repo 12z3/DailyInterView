@@ -22,10 +22,19 @@ public class UberTask1 {
     private static void pythagorean(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.size() - 1; j++) {
-                if (i != j && Math.pow(list.get(i), 2) == Math.pow(list.get(j), 2) + Math.pow(list.get(j + 1), 2)) {
-                    System.out.printf("%dˆ2 = %dˆ2 + %dˆ2%n", list.get(i), list.get(j), list.get(j + 1));
-                }
+                if (condition(list, i, j))
+                    System.out.printf("%dˆ2 = %dˆ2 + %dˆ2%n",
+                            list.get(i), list.get(j), list.get(j + 1));
             }
         }
+    }
+
+    private static boolean condition(List<Integer> list, int i, int j) {
+        if (i != j
+                && Math.pow(list.get(i), 2) ==
+                Math.pow(list.get(j), 2) + Math.pow(list.get(j + 1), 2)) {
+            return true;
+        }
+        return false;
     }
 }
