@@ -30,9 +30,9 @@ public class UberTask1 {
     }
 
     private static boolean condition(List<Integer> list, int i, int j) {
-        if (i != j
-                && Math.pow(list.get(i), 2) ==
-                Math.pow(list.get(j), 2) + Math.pow(list.get(j + 1), 2)) {
+        if (i != j &&
+                Math.pow(list.get(i), 2) ==
+                        Math.pow(list.get(j), 2) + Math.pow(list.get(j + 1), 2)) {
             return true;
         }
         return false;
