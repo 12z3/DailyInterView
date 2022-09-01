@@ -1,4 +1,5 @@
 package DailyInterView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +18,7 @@ public class UberTask1 {
 
         List<Integer> list = new ArrayList<>(List.of(3, 5, 12, 5, 13));
         pythagorean(list);
+        pythagoreanTwo(list);
     }
 
     private static void pythagorean(List<Integer> list) {
@@ -38,4 +40,25 @@ public class UberTask1 {
         }
         return false;
     }
+
+    private static void pythagoreanTwo(List<Integer> list) {
+        System.out.println();
+        for (int i = 0; i < list.size(); i++) {
+            int a = list.get(i);
+            for (int j = 0; j < list.size(); j++) {
+                int b = list.get(j);
+                for (int k = 0; k < list.size(); k++) {
+                    int c = list.get(k);
+
+                    if (i != j && j != k && i != k){
+                        if (Math.pow(c, 2) == (Math.pow(a, 2) + Math.pow(b, 2))) {
+                            System.out.printf("%dˆ2 = %dˆ2 + %dˆ2", c, a, b);
+                            System.out.println();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
