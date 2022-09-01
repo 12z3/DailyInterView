@@ -10,7 +10,7 @@ public class UberTask1 {
      * <p>
      * Input: [3, 5, 12, 5, 13]
      * Output: True
-     * Here, 52 + 122 = 132.
+     * Here, 5ˆ2 + 12ˆ2 = 13ˆ2.
      */
 
     public static void main(String[] args) {
