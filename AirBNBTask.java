@@ -43,17 +43,17 @@ public class AirBNBTask {
             for (int j = i + 1; j < input.size(); j++) {
                 word2.delete(0, word2.length());
                 word2.append(input.get(j));
-                if (stbComparator(word1, word2)) {
+                if (wordComparator(word1, word2)) {
                     result.append(word1).append("-").append(word2).append(" ");
                 } else {
                     negativResult.append(word1).append("-").append(word2).append(" ");
                 }
             }
         }
-        System.out.printf("%s / %s %n", result, negativResult);
+        System.out.printf("Result: %s %nNegative result: %s %n", result, negativResult);
     }
 
-    private static boolean stbComparator(StringBuilder stb1, StringBuilder stb2) {
+    private static boolean wordComparator(StringBuilder stb1, StringBuilder stb2) {
         int countChars = 0;
         if (stb1.length() != stb2.length()) return false;
         for (int i = 0; i < stb1.length(); i++) {
