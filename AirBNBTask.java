@@ -29,13 +29,11 @@ public class AirBNBTask {
     }
 
     private static void groupAnagramWords(List<String> input) {
-        List<StringBuilder> res = new ArrayList<>();
-        List<StringBuilder> negativRes = new ArrayList<>();
 
         StringBuilder word1 = new StringBuilder();
         StringBuilder word2 = new StringBuilder();
         StringBuilder result = new StringBuilder();
-        StringBuilder negativResult = new StringBuilder();
+        StringBuilder negativeResult = new StringBuilder();
 
         for (int i = 0; i < input.size(); i++) {
             word1.delete(0, word1.length());
@@ -46,11 +44,11 @@ public class AirBNBTask {
                 if (wordComparator(word1, word2)) {
                     result.append(word1).append("-").append(word2).append(" ");
                 } else {
-                    negativResult.append(word1).append("-").append(word2).append(" ");
+                    negativeResult.append(word1).append("-").append(word2).append(" ");
                 }
             }
         }
-        System.out.printf("Result: %s %nNegative result: %s %n", result, negativResult);
+        System.out.printf("Result: %s %nNegative result: %s %n", result, negativeResult);
     }
 
     private static boolean wordComparator(StringBuilder stb1, StringBuilder stb2) {
