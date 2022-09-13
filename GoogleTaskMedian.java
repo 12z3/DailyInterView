@@ -25,7 +25,7 @@ public class GoogleTaskMedian {
         List<Double> medians = new ArrayList<>();
         double median = 0;
 
-        System.out.println(stream);
+        System.out.println("stream: " + stream);
 
         for (int i = 0; i < stream.size(); i++) {
             tmp.add((double) stream.get(i));
@@ -44,6 +44,6 @@ public class GoogleTaskMedian {
                 medians.add(median);
             }
         }
-        System.out.println(medians);
+        System.out.println("median: " + medians);
     }
 }
