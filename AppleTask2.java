@@ -25,7 +25,6 @@ public class AppleTask2 {
                     stb.deleteCharAt(i);
                     stb.deleteCharAt(i);
                     count++;
-
                 }
             }
         }
