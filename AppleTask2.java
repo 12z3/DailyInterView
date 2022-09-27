@@ -22,8 +22,8 @@ public class AppleTask2 {
         while (count < stb.length()){
             for (int i = 0; i < stb.length() - 1; i++) {
                 if (stb.charAt(i) == stb.charAt(i + 1)) {
-                    stb.deleteCharAt(i);
-                    stb.deleteCharAt(i);
+                    stb.deleteCharAt(i);             //...  и понеже stb.deleteCharAt(i) == stb.deleteCharAt( i+ 1) ->
+                    stb.deleteCharAt(i);             // ... то stb.deleteCharAt(i)
                     count++;
                 }
             }
